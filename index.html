@@ -1,0 +1,657 @@
+<!doctype html>
+<html lang="fr" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Faîte, couverture, charpente et maçonnerie à Nantes</title>
+  <meta name="description" content="Faîte construit, agrandit et rénove les maisons autour de Nantes : couverture, isolation, charpente, murs et façades, gros œuvre. Devis gratuit sous 48 h, garantie décennale.">
+  <meta name="theme-color" content="#EEEFEB">
+  <meta name="author" content="Lou Marche">
+  <!-- Entreprise fictive : on évite qu'elle apparaisse dans les recherches « couvreur Nantes » -->
+  <meta name="robots" content="noindex">
+  <link rel="author" href="https://freelance-lm.fr/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:site_name" content="Faîte">
+  <meta property="og:title" content="Faîte, du sol au faîte">
+  <meta property="og:description" content="Site vitrine d'une entreprise du bâtiment : la maison se décompose métier par métier, et l'estimation en ligne se construit comme un vrai devis.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&display=swap">
+  <link rel="stylesheet" href="css/style.css?v=2">
+  <script>document.documentElement.classList.replace('no-js', 'js'); setTimeout(function () { document.documentElement.classList.add('is-ready'); }, 3000);</script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js" integrity="sha384-HOvlOYPIs/zjoIkWUGXkVmXsjr8GuZLV+Q+rcPwmJOVZVpvTSXQChiN4t9Euv9Vc" crossorigin="anonymous" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js" integrity="sha384-P8VzCVnT9NBUkMrpcIZrJbA7EBjJvh/fJS6PmP+4nLIM284DtsImIv8D0fFjIkeh" crossorigin="anonymous" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/Flip.min.js" integrity="sha384-lg3+EgIwmxYq9YD4ix279pdUEasqmOS17fF+2mI/NEg6JHkawYaWYpJ6nKZenPOy" crossorigin="anonymous" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.3.4/dist/lenis.min.js" integrity="sha384-FKTX0CNJ8ngN1oGMBReVu7mvjTJyjFiD5etb1NKnYxc+8eFI2O0KWnksTN+oTFcu" crossorigin="anonymous" defer></script>
+  <script src="js/axo.js?v=2" defer></script>
+  <script src="js/estimate.js?v=2" defer></script>
+  <script src="js/main.js?v=2" defer></script>
+</head>
+<body>
+  <a class="skip" href="#contenu">Aller au contenu</a>
+
+  <!-- ============ En-tête ============ -->
+  <header class="site-header" data-header>
+    <div class="site-header__inner">
+      <a class="logo" href="#top" aria-label="Faîte, retour en haut de page">
+        <span class="wordmark" aria-hidden="true">fa<span class="roof-i">ı<svg class="roof-i__roof" viewBox="0 0 24 12"><path d="M2.5 11 12 2.6l9.5 8.4"/></svg></span>te</span>
+      </a>
+
+      <nav class="nav" aria-label="Navigation principale">
+        <ul class="nav__list">
+          <li><a href="#metiers" data-nav="metiers">Métiers</a></li>
+          <li><a href="#realisations" data-nav="realisations">Réalisations</a></li>
+          <li><a href="#estimation" data-nav="estimation">Estimation</a></li>
+          <li><a href="#methode" data-nav="methode">Méthode</a></li>
+          <li><a href="#entreprise" data-nav="entreprise">L'entreprise</a></li>
+        </ul>
+      </nav>
+
+      <a class="header-phone" href="https://freelance-lm.fr/#contact">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25c1.12.37 2.33.57 3.6.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>
+        <span>02 61 91 47 30</span>
+      </a>
+      <a class="btn btn--primary btn--sm header-cta" href="https://freelance-lm.fr/#contact">Demander un devis</a>
+      <button class="burger" type="button" aria-expanded="false" aria-controls="menu" data-burger>
+        <span class="sr-only">Ouvrir le menu</span>
+        <span class="burger__bar"></span><span class="burger__bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <dialog class="menu" id="menu" aria-label="Menu" data-menu>
+    <div class="menu__inner">
+      <button class="menu__close" type="button" data-menu-close>Fermer</button>
+      <nav aria-label="Menu mobile">
+        <ul class="menu__list">
+          <li><a href="#metiers">Métiers</a></li>
+          <li><a href="#realisations">Réalisations</a></li>
+          <li><a href="#estimation">Estimation</a></li>
+          <li><a href="#methode">Méthode</a></li>
+          <li><a href="#entreprise">L'entreprise</a></li>
+          <li><a href="#faq">Questions</a></li>
+        </ul>
+      </nav>
+      <div class="menu__foot">
+        <a class="btn btn--primary" href="https://freelance-lm.fr/#contact">Demander un devis</a>
+        <a class="menu__phone" href="https://freelance-lm.fr/#contact">02 61 91 47 30</a>
+        <p class="menu__hours">Du lundi au vendredi, de 7&nbsp;h&nbsp;30 à 18&nbsp;h</p>
+      </div>
+    </div>
+  </dialog>
+
+  <main id="contenu">
+
+    <!-- ============ Accueil + métiers : la maison en axonométrie ============ -->
+    <section class="strata" id="top" aria-labelledby="hero-title" data-strata>
+      <div class="strata__text">
+
+        <header class="hero">
+          <h1 class="hero__title display" id="hero-title">
+            <span class="sr-only">Du sol au faîte.</span>
+            <span class="line" aria-hidden="true"><span>Du sol</span></span>
+            <span class="line" aria-hidden="true"><span>au fa<span class="roof-i">ı<svg class="roof-i__roof" viewBox="0 0 24 12"><path d="M2.5 11 12 2.6l9.5 8.4"/></svg></span>te.</span></span>
+          </h1>
+          <p class="hero__lead lead">Couverture, isolation, charpente, murs et façades, gros œuvre&nbsp;: une seule équipe pour construire, agrandir et rénover votre maison, à Nantes et dans un rayon de 50&nbsp;km.</p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="https://freelance-lm.fr/#contact">Demander un devis</a>
+            <a class="btn btn--ghost" href="#estimation">Estimer mes travaux</a>
+          </div>
+          <ul class="hero__proof">
+            <li><strong>4,9/5</strong> sur 212 avis clients</li>
+            <li><strong>Devis gratuit</strong> sous 48&nbsp;h</li>
+            <li><strong>Garantie décennale</strong>, label RGE</li>
+          </ul>
+          <p class="hero__hint"><span class="hero__hint-line" aria-hidden="true"></span>Faites défiler&nbsp;: la maison se décompose, métier par métier.</p>
+        </header>
+
+        <div class="strata__intro" id="metiers">
+          <h2 class="h2">Cinq métiers, un seul interlocuteur.</h2>
+          <p class="lead">Nos couvreurs, charpentiers, maçons et façadiers sont tous salariés de l'entreprise. Ils travaillent ensemble sur votre chantier, coordonnés par un chef de chantier que vous gardez du premier rendez-vous jusqu'à la réception.</p>
+        </div>
+
+        <article class="trade" id="couverture" data-layer="couverture" aria-labelledby="t-couverture">
+          <h3 class="trade__title h3" id="t-couverture"><span>Couverture</span></h3>
+          <p>Ardoise au nord de la Loire, tuile au sud&nbsp;: nous refaisons votre toit à l'identique ou le modernisons, avec l'écran sous-toiture, les liteaux et la zinguerie qui vont avec.</p>
+          <ul class="trade__list">
+            <li>Réfection complète ou partielle</li>
+            <li>Ardoise naturelle, tuile terre cuite, zinc, bac acier</li>
+            <li>Gouttières, noues, solins et faîtage</li>
+            <li>Fenêtres de toit et lucarnes</li>
+            <li>Fuite ou tempête&nbsp;: bâchage sous 24&nbsp;h</li>
+          </ul>
+          <a class="link" href="#estimation" data-estimate="toiture">Estimer une réfection de toiture</a>
+        </article>
+
+        <article class="trade" id="isolation" data-layer="isolation" aria-labelledby="t-isolation">
+          <h3 class="trade__title h3" id="t-isolation"><span>Isolation</span></h3>
+          <p>Dans une maison mal isolée, jusqu'à 30&nbsp;% de la chaleur s'échappe par le toit. Nous isolons les combles perdus, les rampants, ou le toit par-dessus la charpente (sarking) pour garder toute la hauteur sous plafond.</p>
+          <ul class="trade__list">
+            <li>Combles perdus par soufflage</li>
+            <li>Rampants et combles aménagés</li>
+            <li>Sarking, isolation du toit par l'extérieur</li>
+            <li>Pare-vapeur et étanchéité à l'air</li>
+          </ul>
+          <p class="trade__note">Entreprise RGE&nbsp;: vos travaux ouvrent droit à MaPrimeRénov' et aux primes CEE.</p>
+          <a class="link" href="#estimation" data-estimate="isolation">Estimer une isolation</a>
+        </article>
+
+        <article class="trade" id="charpente" data-layer="charpente" aria-labelledby="t-charpente">
+          <h3 class="trade__title h3" id="t-charpente"><span>Charpente</span></h3>
+          <p>Nos charpentiers diagnostiquent, traitent et renforcent les charpentes anciennes. Pour une surélévation ou des combles à aménager, ils taillent la nouvelle charpente dans notre atelier de Carquefou.</p>
+          <ul class="trade__list">
+            <li>Diagnostic et traitement (insectes, champignons)</li>
+            <li>Renforcement et remplacement de pièces</li>
+            <li>Charpente traditionnelle ou fermettes</li>
+            <li>Surélévation et ouverture de combles</li>
+          </ul>
+          <a class="link" href="#contact" data-project="charpente">Demander un diagnostic de charpente</a>
+        </article>
+
+        <article class="trade" id="murs" data-layer="murs" aria-labelledby="t-murs">
+          <h3 class="trade__title h3" id="t-murs"><span>Murs et façades</span></h3>
+          <p>Nous montons, ouvrons et réparons les murs porteurs, puis nous les protégeons&nbsp;: ravalement, enduit à la chaux ou isolation thermique par l'extérieur.</p>
+          <ul class="trade__list">
+            <li>Ouverture de mur porteur, avec note de calcul</li>
+            <li>Ravalement, enduit chaux ou monocouche</li>
+            <li>Isolation thermique par l'extérieur</li>
+            <li>Fissures et remontées d'humidité</li>
+          </ul>
+          <a class="link" href="#estimation" data-estimate="facade">Estimer un ravalement</a>
+        </article>
+
+        <article class="trade" id="gros-oeuvre" data-layer="fondations" aria-labelledby="t-fondations">
+          <h3 class="trade__title h3" id="t-fondations"><span>Gros œuvre et extensions</span></h3>
+          <p>Pour agrandir, nous prenons tout en charge&nbsp;: plans, déclaration préalable ou permis de construire, terrassement, fondations, dalle et murs, jusqu'au raccordement avec la maison existante.</p>
+          <ul class="trade__list">
+            <li>Extensions et surélévations</li>
+            <li>Fondations, dalles et vides sanitaires</li>
+            <li>Garages, annexes et murs de clôture</li>
+            <li>Démarches d'urbanisme</li>
+          </ul>
+          <a class="link" href="#estimation" data-estimate="extension">Estimer une extension</a>
+        </article>
+
+        <div class="strata__outro" data-outro>
+          <p class="strata__outro-text">Chaque couche posée dans le bon ordre, par des équipes qui se parlent&nbsp;: c'est ce qui fait qu'une maison tient.</p>
+          <a class="link" href="#realisations">Voir nos chantiers récents</a>
+        </div>
+      </div>
+
+      <div class="strata__visual">
+        <div class="strata__sticky">
+          <div class="sheet" data-sheet>
+            <svg class="axo" data-axo role="img" aria-labelledby="axo-title axo-desc">
+              <title id="axo-title">Maison en axonométrie éclatée</title>
+              <desc id="axo-desc">Dessin technique d'une maison qui se décompose en cinq couches&nbsp;: gros œuvre, murs et façades, charpente, isolation et couverture.</desc>
+            </svg>
+            <div class="scalebar" aria-hidden="true" data-scalebar>
+              <span class="scalebar__bar"><i></i><i></i><i></i><i></i><i></i></span>
+              <span class="scalebar__labels"><span>0</span><span>5&nbsp;m</span></span>
+            </div>
+            <svg class="north" viewBox="0 0 40 52" aria-hidden="true"><circle cx="20" cy="32" r="15"/><path d="M20 12 27 40 20 34 13 40Z"/><text x="20" y="9">N</text></svg>
+            <div class="cartouche" aria-hidden="true">
+              <div class="cartouche__cell"><span>Projet</span><strong>Votre maison</strong></div>
+              <div class="cartouche__cell"><span>Maître d'ouvrage</span><strong>Vous</strong></div>
+              <div class="cartouche__cell"><span>Entreprise</span><strong>Faîte</strong></div>
+              <div class="cartouche__cell cartouche__cell--wide"><span>Planche</span><strong data-planche>1/6 Vue d'ensemble</strong></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Réalisations ============ -->
+    <section class="works" id="realisations" aria-labelledby="works-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="h2" id="works-title">Chantiers récents autour de Nantes.</h2>
+          <p class="lead">Faites glisser le curseur pour comparer l'extension de Rezé en semaine&nbsp;6 et le jour de la livraison. Cliquez sur un chantier pour voir sa fiche.</p>
+        </div>
+
+        <div class="feature">
+          <figure class="compare" data-compare>
+            <img class="compare__img"
+                 src="https://images.unsplash.com/photo-1754063257992-bb9eabdbdd86?auto=format&fit=crop&w=1400&h=1050&q=75"
+                 srcset="https://images.unsplash.com/photo-1754063257992-bb9eabdbdd86?auto=format&fit=crop&w=800&h=600&q=72 800w,
+                         https://images.unsplash.com/photo-1754063257992-bb9eabdbdd86?auto=format&fit=crop&w=1400&h=1050&q=75 1400w"
+                 sizes="(min-width: 1100px) 62vw, 92vw" width="1400" height="1050"
+                 alt="L'extension livrée : enduit blanc, baies vitrées et terrasse dallée." loading="lazy" decoding="async">
+            <div class="compare__before">
+              <img class="compare__img"
+                   src="https://images.unsplash.com/photo-1632143697739-5559b57ac985?auto=format&fit=crop&w=1400&h=1050&q=75"
+                   srcset="https://images.unsplash.com/photo-1632143697739-5559b57ac985?auto=format&fit=crop&w=800&h=600&q=72 800w,
+                           https://images.unsplash.com/photo-1632143697739-5559b57ac985?auto=format&fit=crop&w=1400&h=1050&q=75 1400w"
+                   sizes="(min-width: 1100px) 62vw, 92vw" width="1400" height="1050"
+                   alt="La même extension en semaine 6 : murs en parpaings montés, matériaux sur le chantier." loading="lazy" decoding="async">
+            </div>
+            <span class="compare__tag compare__tag--before">Semaine 6</span>
+            <span class="compare__tag compare__tag--after">Livraison</span>
+            <span class="compare__handle" aria-hidden="true"><span class="compare__grip"></span></span>
+            <input class="compare__range" type="range" min="0" max="100" value="50" step="1" aria-label="Comparer le chantier en semaine 6 et la livraison" data-compare-range>
+          </figure>
+
+          <aside class="panneau" aria-labelledby="panneau-title">
+            <p class="panneau__kind">Panneau de chantier</p>
+            <h3 class="panneau__title" id="panneau-title">Extension d'une maison des années 30</h3>
+            <dl class="fiche">
+              <div><dt>Lieu</dt><dd>Rezé</dd></div>
+              <div><dt>Nature des travaux</dt><dd>Extension en maçonnerie, enduit, couverture</dd></div>
+              <div><dt>Surface créée</dt><dd>32&nbsp;m²</dd></div>
+              <div><dt>Durée du chantier</dt><dd>14 semaines</dd></div>
+              <div><dt>Livraison</dt><dd>Mars 2026</dd></div>
+            </dl>
+            <p class="panneau__text">Une cuisine ouverte sur le jardin, sous une couverture en tuile raccordée à l'existant. Le mur porteur a été ouvert sur 4,20&nbsp;m, sans interruption de la vie de la maison.</p>
+          </aside>
+        </div>
+
+        <div class="filters" role="group" aria-label="Filtrer les chantiers par métier" data-filters>
+          <button type="button" aria-pressed="true" data-filter="all">Tous <span>8</span></button>
+          <button type="button" aria-pressed="false" data-filter="couverture">Couverture <span>4</span></button>
+          <button type="button" aria-pressed="false" data-filter="charpente">Charpente <span>2</span></button>
+          <button type="button" aria-pressed="false" data-filter="isolation">Isolation <span>1</span></button>
+          <button type="button" aria-pressed="false" data-filter="murs">Murs et façades <span>2</span></button>
+        </div>
+        <p class="sr-only" role="status" data-filter-status></p>
+
+        <ul class="works-grid" data-works>
+          <li class="work" data-cat="couverture">
+            <button class="work__btn" type="button" data-work="longere" aria-haspopup="dialog">
+              <span class="work__media"><img src="https://images.unsplash.com/photo-1694171738257-76d1260d491d?auto=format&fit=crop&w=900&h=675&q=72" srcset="https://images.unsplash.com/photo-1694171738257-76d1260d491d?auto=format&fit=crop&w=600&h=450&q=72 600w, https://images.unsplash.com/photo-1694171738257-76d1260d491d?auto=format&fit=crop&w=900&h=675&q=72 900w" sizes="(min-width: 1100px) 30vw, (min-width: 700px) 45vw, 92vw" width="900" height="675" alt="Longère en granit coiffée d'ardoises, avec trois lucarnes." loading="lazy" decoding="async"></span>
+              <span class="work__meta"><span>Saint-Mars-du-Désert</span><span>2025</span></span>
+              <span class="work__title">Longère en granit, couverture en ardoise</span>
+            </button>
+          </li>
+          <li class="work" data-cat="couverture">
+            <button class="work__btn" type="button" data-work="clisson" aria-haspopup="dialog">
+              <span class="work__media"><img src="https://images.unsplash.com/photo-1563993356056-b23a9cd265ad?auto=format&fit=crop&w=900&h=675&q=72" srcset="https://images.unsplash.com/photo-1563993356056-b23a9cd265ad?auto=format&fit=crop&w=600&h=450&q=72 600w, https://images.unsplash.com/photo-1563993356056-b23a9cd265ad?auto=format&fit=crop&w=900&h=675&q=72 900w" sizes="(min-width: 1100px) 30vw, (min-width: 700px) 45vw, 92vw" width="900" height="675" alt="Toiture neuve en tuiles terre cuite sous un ciel bleu, avec une souche de cheminée." loading="lazy" decoding="async"></span>
+              <span class="work__meta"><span>Clisson</span><span>2025</span></span>
+              <span class="work__title">Maison de bourg, tuiles terre cuite</span>
+            </button>
+          </li>
+          <li class="work" data-cat="charpente">
+            <button class="work__btn" type="button" data-work="grange" aria-haspopup="dialog">
+              <span class="work__media"><img src="https://images.unsplash.com/photo-1778996369898-af5547e18414?auto=format&fit=crop&w=900&h=675&q=72" srcset="https://images.unsplash.com/photo-1778996369898-af5547e18414?auto=format&fit=crop&w=600&h=450&q=72 600w, https://images.unsplash.com/photo-1778996369898-af5547e18414?auto=format&fit=crop&w=900&h=675&q=72 900w" sizes="(min-width: 1100px) 30vw, (min-width: 700px) 45vw, 92vw" width="900" height="675" alt="Charpente traditionnelle en bois, fermes apparentes sous le pignon." loading="lazy" decoding="async"></span>
+              <span class="work__meta"><span>Carquefou</span><span>2024</span></span>
+              <span class="work__title">Grange transformée, charpente en chêne</span>
+            </button>
+          </li>
+          <li class="work" data-cat="murs">
+            <button class="work__btn" type="button" data-work="graslin" aria-haspopup="dialog">
+              <span class="work__media"><img src="https://images.unsplash.com/photo-1785234598179-24bf745a33ad?auto=format&fit=crop&w=900&h=675&q=72" srcset="https://images.unsplash.com/photo-1785234598179-24bf745a33ad?auto=format&fit=crop&w=600&h=450&q=72 600w, https://images.unsplash.com/photo-1785234598179-24bf745a33ad?auto=format&fit=crop&w=900&h=675&q=72 900w" sizes="(min-width: 1100px) 30vw, (min-width: 700px) 45vw, 92vw" width="900" height="675" alt="Façaders sur un échafaudage devant une façade jaune à fenêtres cintrées." loading="lazy" decoding="async"></span>
+              <span class="work__meta"><span>Nantes, Graslin</span><span>2025</span></span>
+              <span class="work__title">Immeuble de rapport, ravalement complet</span>
+            </button>
+          </li>
+          <li class="work" data-cat="isolation">
+            <button class="work__btn" type="button" data-work="combles" aria-haspopup="dialog">
+              <span class="work__media"><img src="https://images.unsplash.com/photo-1752852381113-7d93abc9d7ea?auto=format&fit=crop&w=900&h=675&q=72" srcset="https://images.unsplash.com/photo-1752852381113-7d93abc9d7ea?auto=format&fit=crop&w=600&h=450&q=72 600w, https://images.unsplash.com/photo-1752852381113-7d93abc9d7ea?auto=format&fit=crop&w=900&h=675&q=72 900w" sizes="(min-width: 1100px) 30vw, (min-width: 700px) 45vw, 92vw" width="900" height="675" alt="Combles en cours d'isolation sous les chevrons, éclairés par deux fenêtres de toit." loading="lazy" decoding="async"></span>
+              <span class="work__meta"><span>Sainte-Luce-sur-Loire</span><span>2026</span></span>
+              <span class="work__title">Combles aménagés, isolation des rampants</span>
+            </button>
+          </li>
+          <li class="work" data-cat="couverture charpente">
+            <button class="work__btn" type="button" data-work="lucarnes" aria-haspopup="dialog">
+              <span class="work__media"><img src="https://images.unsplash.com/photo-1778235765575-163a9eced952?auto=format&fit=crop&crop=bottom&w=900&h=675&q=72" srcset="https://images.unsplash.com/photo-1778235765575-163a9eced952?auto=format&fit=crop&crop=bottom&w=600&h=450&q=72 600w, https://images.unsplash.com/photo-1778235765575-163a9eced952?auto=format&fit=crop&crop=bottom&w=900&h=675&q=72 900w" sizes="(min-width: 1100px) 30vw, (min-width: 700px) 45vw, 92vw" width="900" height="675" alt="Toit en ardoise percé de cinq lucarnes à fenêtres blanches." loading="lazy" decoding="async"></span>
+              <span class="work__meta"><span>Nantes, Procé</span><span>2024</span></span>
+              <span class="work__title">Cinq lucarnes créées dans un toit en ardoise</span>
+            </button>
+          </li>
+          <li class="work" data-cat="couverture">
+            <button class="work__btn" type="button" data-work="zinc" aria-haspopup="dialog">
+              <span class="work__media"><img src="https://images.unsplash.com/photo-1764112105049-bf2a430cf2aa?auto=format&fit=crop&w=900&h=675&q=72" srcset="https://images.unsplash.com/photo-1764112105049-bf2a430cf2aa?auto=format&fit=crop&w=600&h=450&q=72 600w, https://images.unsplash.com/photo-1764112105049-bf2a430cf2aa?auto=format&fit=crop&w=900&h=675&q=72 900w" sizes="(min-width: 1100px) 30vw, (min-width: 700px) 45vw, 92vw" width="900" height="675" alt="Lucarne habillée de zinc au milieu d'un toit de tuiles plates anciennes." loading="lazy" decoding="async"></span>
+              <span class="work__meta"><span>Vertou</span><span>2025</span></span>
+              <span class="work__title">Lucarne habillée de zinc</span>
+            </button>
+          </li>
+          <li class="work" data-cat="murs charpente">
+            <button class="work__btn" type="button" data-work="pavillon" aria-haspopup="dialog">
+              <span class="work__media"><img src="https://images.unsplash.com/photo-1766675714082-c90943c69040?auto=format&fit=crop&w=900&h=675&q=72" srcset="https://images.unsplash.com/photo-1766675714082-c90943c69040?auto=format&fit=crop&w=600&h=450&q=72 600w, https://images.unsplash.com/photo-1766675714082-c90943c69040?auto=format&fit=crop&w=900&h=675&q=72 900w" sizes="(min-width: 1100px) 30vw, (min-width: 700px) 45vw, 92vw" width="900" height="675" alt="Petit pavillon en pierre restauré, porte blanche et toit à deux pans." loading="lazy" decoding="async"></span>
+              <span class="work__meta"><span>Le Loroux-Bottereau</span><span>2026</span></span>
+              <span class="work__title">Pavillon en pierre, murs et charpente restaurés</span>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <dialog class="work-dialog" aria-labelledby="wd-title" data-work-dialog data-lenis-prevent>
+      <div class="work-dialog__inner">
+        <figure class="work-dialog__media"><img src="" alt="" data-wd-img></figure>
+        <div class="work-dialog__body">
+          <p class="work-dialog__cat" data-wd-cat></p>
+          <h3 class="work-dialog__title" id="wd-title" data-wd-title></h3>
+          <dl class="fiche" data-wd-fiche></dl>
+          <p class="work-dialog__text" data-wd-text></p>
+          <a class="btn btn--primary" href="https://freelance-lm.fr/#contact" data-wd-cta>Demander un devis pour un projet similaire</a>
+        </div>
+        <button class="work-dialog__close" type="button" data-wd-close>Fermer</button>
+      </div>
+    </dialog>
+
+    <!-- ============ Estimation ============ -->
+    <section class="estimate theme-blue" id="estimation" aria-labelledby="est-title">
+      <div class="container estimate__grid">
+        <div class="estimate__controls">
+          <h2 class="h2" id="est-title">Votre budget, ligne par ligne.</h2>
+          <p class="lead">Choisissez vos travaux&nbsp;: l'estimation se construit comme un vrai devis, avec les prix que nous pratiquons en 2026 autour de Nantes.</p>
+          <form class="est-form" data-est-form>
+            <fieldset class="seg">
+              <legend class="est-label">Type de travaux</legend>
+              <div class="seg__opts" data-est-types></div>
+            </fieldset>
+            <div class="est-fields" data-est-fields></div>
+          </form>
+          <noscript><p>Activez JavaScript pour utiliser l'estimateur, ou appelez-nous au 02&nbsp;61&nbsp;91&nbsp;47&nbsp;30.</p></noscript>
+        </div>
+        <div class="estimate__sheet">
+          <article class="devis" aria-labelledby="devis-kind" data-devis>
+            <header class="devis__head">
+              <div class="devis__brand">
+                <span class="wordmark" aria-hidden="true">fa<span class="roof-i">ı<svg class="roof-i__roof" viewBox="0 0 24 12"><path d="M2.5 11 12 2.6l9.5 8.4"/></svg></span>te</span>
+                <span class="devis__addr">12 rue de l'Ardoisière<br>44300 Nantes</span>
+              </div>
+              <div class="devis__ref">
+                <p class="devis__kind" id="devis-kind">Estimation</p>
+                <p data-devis-num></p>
+                <p data-devis-date></p>
+              </div>
+            </header>
+            <p class="devis__object"><span>Objet</span> <strong data-devis-object></strong></p>
+            <table class="devis__table">
+              <thead><tr><th scope="col">Désignation</th><th scope="col">Qté</th><th scope="col">Montant HT</th></tr></thead>
+              <tbody data-devis-lines></tbody>
+            </table>
+            <dl class="devis__totals" data-devis-totals></dl>
+            <p class="devis__note" data-devis-note></p>
+            <p class="sr-only" aria-live="polite" data-devis-live></p>
+            <div class="devis__actions">
+              <button class="btn btn--primary" type="button" data-devis-request>Recevoir un devis précis</button>
+              <p>Gratuit, après une visite sur place.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Méthode ============ -->
+    <section class="method" id="methode" aria-labelledby="method-title">
+      <div class="container">
+        <div class="method__head">
+          <h2 class="h2" id="method-title">Votre chantier, semaine par semaine.</h2>
+          <p class="lead">Exemple&nbsp;: la réfection d'une toiture de 140&nbsp;m² en ardoise à Saint-Sébastien-sur-Loire. Dès la signature, vous savez ce qui se passe et quand.</p>
+        </div>
+
+        <div class="method__body">
+          <figure class="method__photo">
+            <img src="https://images.unsplash.com/photo-1763665814538-8ba04597286c?auto=format&fit=crop&w=1200&h=900&q=72"
+                 srcset="https://images.unsplash.com/photo-1763665814538-8ba04597286c?auto=format&fit=crop&w=700&h=525&q=72 700w,
+                         https://images.unsplash.com/photo-1763665814538-8ba04597286c?auto=format&fit=crop&w=1200&h=900&q=72 1200w"
+                 sizes="(min-width: 1100px) 34vw, 92vw" width="1200" height="900"
+                 alt="Deux couvreurs posent l'ardoise sur des liteaux neufs, à côté d'un monte-matériaux." loading="lazy" decoding="async">
+            <figcaption>Semaine 6&nbsp;: pose de l'ardoise sur liteaux neufs.</figcaption>
+          </figure>
+
+          <div class="gantt" role="table" aria-label="Planning type d'une réfection de toiture en huit semaines" data-gantt>
+            <div class="gantt__row gantt__row--head" role="row">
+              <span class="gantt__label" role="columnheader">Étape</span>
+              <span class="gantt__weeks" role="columnheader" aria-label="Semaines 1 à 8"><span>S1</span><span>S2</span><span>S3</span><span>S4</span><span>S5</span><span>S6</span><span>S7</span><span>S8</span></span>
+            </div>
+            <div class="gantt__row is-you" role="row" style="--s:0;--e:1">
+              <span class="gantt__label" role="rowheader">Visite technique et relevé des mesures</span>
+              <span class="gantt__track" role="cell" aria-label="Semaine 1"><span class="gantt__ms"></span></span>
+            </div>
+            <div class="gantt__row is-you" role="row" style="--s:2;--e:3">
+              <span class="gantt__label" role="rowheader">Devis détaillé, envoyé sous 48&nbsp;h</span>
+              <span class="gantt__track" role="cell" aria-label="Semaine 1"><span class="gantt__ms"></span></span>
+            </div>
+            <div class="gantt__row" role="row" style="--s:5;--e:20">
+              <span class="gantt__label" role="rowheader">Commande des ardoises, déclaration préalable</span>
+              <span class="gantt__track" role="cell" aria-label="Semaines 2 à 4"><span class="gantt__bar"></span></span>
+            </div>
+            <div class="gantt__row" role="row" style="--s:20;--e:22">
+              <span class="gantt__label" role="rowheader">Montage de l'échafaudage</span>
+              <span class="gantt__track" role="cell" aria-label="Semaine 5"><span class="gantt__bar"></span></span>
+            </div>
+            <div class="gantt__row" role="row" style="--s:22;--e:25">
+              <span class="gantt__label" role="rowheader">Dépose et contrôle de la charpente</span>
+              <span class="gantt__track" role="cell" aria-label="Semaine 5"><span class="gantt__bar"></span></span>
+            </div>
+            <div class="gantt__row" role="row" style="--s:25;--e:35">
+              <span class="gantt__label" role="rowheader">Écran sous-toiture, liteaux, pose de l'ardoise</span>
+              <span class="gantt__track" role="cell" aria-label="Semaines 6 et 7"><span class="gantt__bar"></span></span>
+            </div>
+            <div class="gantt__row" role="row" style="--s:34;--e:39">
+              <span class="gantt__label" role="rowheader">Zinguerie, faîtage et rives</span>
+              <span class="gantt__track" role="cell" aria-label="Semaines 7 et 8"><span class="gantt__bar"></span></span>
+            </div>
+            <div class="gantt__row is-you" role="row" style="--s:39;--e:40">
+              <span class="gantt__label" role="rowheader">Réception des travaux, avec vous</span>
+              <span class="gantt__track" role="cell" aria-label="Fin de la semaine 8"><span class="gantt__ms"></span></span>
+            </div>
+            <div class="gantt__row gantt__row--photo" role="row">
+              <span class="gantt__label" role="rowheader">Photos du chantier envoyées chaque vendredi</span>
+              <span class="gantt__track" role="cell" aria-label="Vendredis des semaines 5 à 8"><span class="gantt__dot" style="--d:24"></span><span class="gantt__dot" style="--d:29"></span><span class="gantt__dot" style="--d:34"></span><span class="gantt__dot" style="--d:39"></span></span>
+            </div>
+            <p class="gantt__legend"><span class="gantt__swatch" aria-hidden="true"></span>En orange, les étapes où l'on se voit.</p>
+          </div>
+        </div>
+
+        <ul class="promises">
+          <li><h3>Un seul chef de chantier</h3><p>Il fait la visite, suit les travaux et vous remet les clés. Vous avez son numéro direct.</p></li>
+          <li><h3>Un chantier propre chaque soir</h3><p>Bâchage, tri des déchets et évacuation en déchetterie professionnelle sont compris dans le devis.</p></li>
+          <li><h3>Pas de solde avant la réception</h3><p>30&nbsp;% d'acompte à la commande, puis des paiements à l'avancement. Le solde est réglé une fois les travaux réceptionnés.</p></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ Avis ============ -->
+    <section class="reviews" aria-labelledby="reviews-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="h2" id="reviews-title">Ce qu'en disent nos clients.</h2>
+          <p class="lead"><strong>4,9 sur 5</strong> de moyenne, sur 212 avis laissés après réception des travaux.</p>
+        </div>
+        <div class="reviews__grid">
+          <figure class="review review--main">
+            <blockquote><p>Notre toit fuyait depuis deux hivers. Le devis est arrivé deux jours après la visite, clair ligne par ligne, et le chantier a duré les trois semaines annoncées. Le vendredi, on recevait les photos de l'avancement.</p></blockquote>
+            <figcaption><strong>Claire et Yann M.</strong> <span>Vertou, couverture en ardoise</span></figcaption>
+          </figure>
+          <figure class="review">
+            <blockquote><p>On voulait agrandir la cuisine sans courir après cinq artisans. Un seul interlocuteur du terrassement à l'enduit, c'est ce qui nous a décidés.</p></blockquote>
+            <figcaption><strong>Sophie L.</strong> <span>Rezé, extension de 32&nbsp;m²</span></figcaption>
+          </figure>
+          <figure class="review">
+            <blockquote><p>Isolation des rampants et deux fenêtres de toit&nbsp;: il fait enfin bon dans les chambres de l'étage. Ils ont monté le dossier MaPrimeRénov' avec nous.</p></blockquote>
+            <figcaption><strong>Karim B.</strong> <span>Saint-Herblain, isolation des combles</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ L'entreprise ============ -->
+    <section class="company" id="entreprise" aria-labelledby="company-title">
+      <div class="container company__grid">
+        <div class="company__text">
+          <h2 class="h2" id="company-title">Une entreprise nantaise, depuis 1998.</h2>
+          <p class="lead">Faîte est née d'un atelier de couverture de trois compagnons. Nous sommes aujourd'hui 38&nbsp;: couvreurs, charpentiers, maçons et façadiers, tous salariés de l'entreprise. Chaque année, nous formons quatre apprentis.</p>
+          <dl class="guarantees">
+            <div><dt>Garantie décennale</dt><dd>Ce qui touche à la solidité ou à l'étanchéité de votre maison est couvert dix ans. L'attestation est jointe à chaque devis.</dd></div>
+            <div><dt>Qualibat RGE</dt><dd>Nos travaux d'isolation ouvrent droit à MaPrimeRénov', aux primes CEE et à l'éco-prêt à taux zéro.</dd></div>
+            <div><dt>Parfait achèvement</dt><dd>Pendant un an après la réception, nous reprenons tout défaut que vous nous signalez.</dd></div>
+          </dl>
+        </div>
+        <figure class="company__photo">
+          <img src="https://images.unsplash.com/photo-1673865641469-34498379d8af?auto=format&fit=crop&w=1000&h=1250&q=72"
+               srcset="https://images.unsplash.com/photo-1673865641469-34498379d8af?auto=format&fit=crop&w=640&h=800&q=72 640w,
+                       https://images.unsplash.com/photo-1673865641469-34498379d8af?auto=format&fit=crop&w=1000&h=1250&q=72 1000w"
+               sizes="(min-width: 1100px) 30vw, 92vw" width="1000" height="1250"
+               alt="Un maçon en bleu de travail pose un bloc de béton sur un lit de mortier." loading="lazy" decoding="async">
+          <figcaption>En bleu de travail, sur le chantier d'extension de Rezé.</figcaption>
+        </figure>
+        <div class="zone">
+          <h3 class="h3">Où nous intervenons</h3>
+          <svg class="map" viewBox="0 0 560 420" role="img" aria-labelledby="map-title" data-map>
+            <title id="map-title">Carte de la zone d'intervention&nbsp;: 50 km autour de Nantes, de part et d'autre de la Loire</title>
+          </svg>
+          <p>Nantes et 50&nbsp;km autour, de Saint-Nazaire à Ancenis, de Blain à Clisson. Au nord de la Loire, on couvre en ardoise&nbsp;; au sud, en tuile. Nous posons les deux.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Questions ============ -->
+    <section class="faq" id="faq" aria-labelledby="faq-title">
+      <div class="container faq__grid">
+        <div class="faq__head">
+          <h2 class="h2" id="faq-title">Questions fréquentes.</h2>
+          <p>Une autre question&nbsp;? Appelez-nous au <a href="https://freelance-lm.fr/#contact">02&nbsp;61&nbsp;91&nbsp;47&nbsp;30</a>.</p>
+        </div>
+        <div class="faq__list">
+          <details name="faq" open>
+            <summary>Le devis est-il vraiment gratuit&#8239;?</summary>
+            <div class="faq__a"><p>Oui. La visite technique et le devis détaillé sont gratuits et sans engagement, partout dans un rayon de 50&nbsp;km autour de Nantes.</p></div>
+          </details>
+          <details name="faq">
+            <summary>Quels sont vos délais&#8239;?</summary>
+            <div class="faq__a"><p>Visite sous 7 jours, devis sous 48&nbsp;h après la visite. Comptez ensuite 4 à 8 semaines avant le démarrage, selon la saison et les matériaux. Une fuite ou des tuiles envolées&nbsp;? Nous intervenons sous 24&nbsp;h pour bâcher.</p></div>
+          </details>
+          <details name="faq">
+            <summary>Quelles aides pour mes travaux d'isolation&#8239;?</summary>
+            <div class="faq__a"><p>Nous sommes qualifiés RGE&nbsp;: vos travaux ouvrent droit à MaPrimeRénov', aux primes CEE et à l'éco-prêt à taux zéro. Le montant dépend de vos revenus. Nous montons le dossier avec vous, avant la signature du devis.</p></div>
+          </details>
+          <details name="faq">
+            <summary>Faut-il une autorisation d'urbanisme&#8239;?</summary>
+            <div class="faq__a"><p>Pas pour une réfection à l'identique. Changer de matériau ou créer une fenêtre de toit demande une déclaration préalable. Pour une extension&nbsp;: déclaration préalable jusqu'à 20&nbsp;m² (40&nbsp;m² en zone urbaine couverte par un PLU), permis de construire au-delà. Nous préparons le dossier.</p></div>
+          </details>
+          <details name="faq">
+            <summary>Comment se passe le paiement&#8239;?</summary>
+            <div class="faq__a"><p>Un acompte de 30&nbsp;% à la commande, des paiements à l'avancement des travaux, et le solde à la réception. Vous ne payez jamais l'intégralité avant la fin du chantier.</p></div>
+          </details>
+          <details name="faq">
+            <summary>Êtes-vous assurés&#8239;?</summary>
+            <div class="faq__a"><p>Oui&nbsp;: garantie décennale et responsabilité civile professionnelle. Les attestations sont jointes à chaque devis.</p></div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Contact ============ -->
+    <section class="contact theme-ink" id="contact" aria-labelledby="contact-title">
+      <div class="container contact__grid">
+        <div class="contact__aside">
+          <h2 class="h2" id="contact-title">Parlons de votre maison.</h2>
+          <p class="lead">Décrivez votre projet&nbsp;: nous vous rappelons sous 24&nbsp;h ouvrées pour fixer une visite gratuite.</p>
+          <a class="contact__phone" href="https://freelance-lm.fr/#contact">02 61 91 47 30</a>
+          <p class="contact__hours">Du lundi au vendredi, de 7&nbsp;h&nbsp;30 à 18&nbsp;h.<br>Urgence toiture&nbsp;: 7 jours sur 7.</p>
+          <address class="contact__addr">Faîte<br>12 rue de l'Ardoisière<br>44300 Nantes</address>
+        </div>
+
+        <form class="contact-form" method="post" novalidate data-contact-form>
+          <fieldset class="chips">
+            <legend class="field__label">Votre projet</legend>
+            <div class="chips__opts">
+              <label><input type="radio" name="projet" value="toiture" checked><span>Toiture</span></label>
+              <label><input type="radio" name="projet" value="charpente"><span>Charpente</span></label>
+              <label><input type="radio" name="projet" value="isolation"><span>Isolation</span></label>
+              <label><input type="radio" name="projet" value="facade"><span>Façade</span></label>
+              <label><input type="radio" name="projet" value="extension"><span>Extension</span></label>
+              <label><input type="radio" name="projet" value="autre"><span>Autre</span></label>
+            </div>
+          </fieldset>
+
+          <div class="field">
+            <label class="field__label" for="cf-commune">Commune du chantier</label>
+            <input id="cf-commune" name="commune" type="text" autocomplete="address-level2" required aria-describedby="cf-commune-err">
+            <p class="field__error" id="cf-commune-err"></p>
+          </div>
+
+          <div class="field">
+            <label class="field__label" for="cf-message">Votre projet en quelques mots <span class="field__opt">(facultatif)</span></label>
+            <textarea id="cf-message" name="message" rows="4" placeholder="Par exemple : ardoises qui glissent côté nord, maison de 1965, environ 120 m² de toiture."></textarea>
+          </div>
+
+          <div class="field-row">
+            <div class="field">
+              <label class="field__label" for="cf-name">Nom</label>
+              <input id="cf-name" name="name" type="text" autocomplete="name" required aria-describedby="cf-name-err">
+              <p class="field__error" id="cf-name-err"></p>
+            </div>
+            <div class="field">
+              <label class="field__label" for="cf-tel">Téléphone</label>
+              <input id="cf-tel" name="tel" type="tel" autocomplete="tel" inputmode="tel" required aria-describedby="cf-tel-err">
+              <p class="field__error" id="cf-tel-err"></p>
+            </div>
+          </div>
+
+          <div class="field-row">
+            <div class="field">
+              <label class="field__label" for="cf-email">E-mail <span class="field__opt">(facultatif)</span></label>
+              <input id="cf-email" name="email" type="email" autocomplete="email" aria-describedby="cf-email-err">
+              <p class="field__error" id="cf-email-err"></p>
+            </div>
+            <div class="field">
+              <label class="field__label" for="cf-when">Quand vous rappeler&#8239;?</label>
+              <select id="cf-when" name="when">
+                <option>Peu importe</option>
+                <option>Le matin</option>
+                <option>Entre midi et deux</option>
+                <option>En fin de journée</option>
+              </select>
+            </div>
+          </div>
+
+          <label class="check">
+            <input type="checkbox" name="consent" required aria-describedby="cf-consent-err">
+            <span>J'accepte que Faîte utilise ces informations pour me recontacter au sujet de ma demande.</span>
+          </label>
+          <p class="field__error" id="cf-consent-err"></p>
+
+          <div class="contact-form__submit">
+            <button class="btn btn--primary" type="submit">Envoyer ma demande</button>
+            <p class="form-status" role="status" data-form-status></p>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ Pied de page ============ -->
+  <footer class="site-footer theme-ink">
+    <div class="container">
+      <div class="footer__cols">
+        <p class="footer__pitch">Couverture, isolation, charpente, murs et façades, gros œuvre. Nantes et 50&nbsp;km autour, depuis 1998.</p>
+        <nav class="footer__nav" aria-label="Plan du site">
+          <ul>
+            <li><a href="#metiers">Métiers</a></li>
+            <li><a href="#realisations">Réalisations</a></li>
+            <li><a href="#estimation">Estimation</a></li>
+            <li><a href="#methode">Méthode</a></li>
+            <li><a href="#entreprise">L'entreprise</a></li>
+            <li><a href="#faq">Questions fréquentes</a></li>
+          </ul>
+        </nav>
+        <div class="footer__contact">
+          <a href="https://freelance-lm.fr/#contact">02 61 91 47 30</a>
+          <p>12 rue de l'Ardoisière<br>44300 Nantes</p>
+        </div>
+      </div>
+      <p class="footer__word" aria-hidden="true"><span class="wordmark">fa<span class="roof-i">ı<svg class="roof-i__roof" viewBox="0 0 24 12"><path d="M2.5 11 12 2.6l9.5 8.4"/></svg></span>te</span></p>
+      <p class="footer__legal">© 2026 Faîte, entreprise fictive. Site de démonstration conçu et développé par <a href="https://freelance-lm.fr/" rel="author">Lou Marche</a>. Chantiers, avis, prix et coordonnées sont inventés. Photos&nbsp;: Unsplash.</p>
+    </div>
+    <div class="ground" aria-hidden="true"><span>±0,00</span></div>
+  </footer>
+
+  <div class="levelmeter" aria-hidden="true" data-levelmeter>
+    <span class="levelmeter__rule"></span>
+    <span class="levelmeter__mark" data-level-mark><span class="levelmeter__val" data-level-val>+7,07</span></span>
+  </div>
+
+  <nav class="mobilebar" aria-label="Actions rapides" data-mobilebar>
+    <a href="https://freelance-lm.fr/#contact">Appeler</a>
+    <a href="https://freelance-lm.fr/#contact">Demander un devis</a>
+  </nav>
+</body>
+</html>
